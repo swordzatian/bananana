@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: nano-bot
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python bot.py
+    envVars:
+      - key: BOT_TOKEN
+        sync: false  # Введёшь на сайте
+      - key: ADMIN_ID
+        value: 668269859
